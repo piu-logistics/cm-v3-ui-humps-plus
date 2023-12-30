@@ -42,6 +42,9 @@ export const tokenType =
 export const websiteURL =
   process.env.NEXT_PUBLIC_WEBSITE_URL || "#";
 
+export const websiteURL2 =
+  process.env.NEXT_PUBLIC_WEBSITE_URL2 || "#";
+
 export const twitterURL =
   process.env.NEXT_PUBLIC_TWITTER_URL || "#";
 
