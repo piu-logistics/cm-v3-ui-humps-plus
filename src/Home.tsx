@@ -20,6 +20,7 @@ import { collectionDescription } from "./config";
 
 import { tokenType } from "./config";
 import { websiteURL } from "./config";
+import { websiteURL2 } from "./config";
 import { twitterURL } from "./config";
 import { discordURL } from "./config";
 
