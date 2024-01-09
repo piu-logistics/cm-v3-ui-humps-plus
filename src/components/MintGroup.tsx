@@ -241,7 +241,7 @@ export default function MintGroup({
                   }}
                   gatekeeperNetwork={guards.gatekeeperNetwork}
                   connection={connection}
-                  cluster={process.env.NEXT_PUBLIC_SOLANA_NETWORK || "devnet"}
+                  cluster={process.env.NEXT_PUBLIC_SOLANA_NETWORK || "mainnet"}
                   options={{ autoShowModal: false }}
                 > 
                   <MintButton gatekeeperNetwork={guards.gatekeeperNetwork} />
