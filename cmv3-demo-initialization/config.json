@@ -1,14 +1,60 @@
 {
-  "number": 300,
-  "symbol": "F00K",
-  "sellerFeeBasisPoints": 500,
+  "tokenStandard": "nft",
+  "number": 360,
+  "symbol": "Humps",
+  "sellerFeeBasisPoints": 360,
   "isMutable": true,
   "isSequential": false,
   "creators": [
     {
-      "address": "5PCFZP3pNXxYwWrr84qxm9UMpbmVq7Mi8PM5QKBeQxKQ",
+      "address": "EcnBNipTwDBQAfmTBeajRctZZgFn4L8cz5RWEvJ1RVxb",
       "share": 100
     }
   ],
-  "uploadMethod": "bundlr"
+  "uploadMethod": "nft_storage",
+  "ruleSet": null,
+  "awsConfig": null,
+  "sdriveApiKey": null,
+  "nftStorageAuthToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDkyNGI1ODFjYkQxRUE5ODQ4NjM4YTJiOTYxRGZmOGYwQmFjOThhQjMiLCJpc3MiOiJuZnQtc3RvcmFnZSIsImlhdCI6MTcwNDYzNDc5NTQ2MywibmFtZSI6IlRoZUh1bXBzIn0.T3xztEoyo7LgsLIm_LWxtv31dEjlSN-GH5Wo_Ot_OZ4",
+  "shdwStorageAccount": null,
+  "pinataConfig": null,
+  "hiddenSettings": null,
+ "guards": {
+  "default": {
+    "botTax": {
+      "value": 0.01,
+      "lastInstruction": true
+    }
+  },
+  "groups": [
+    {
+      "label": "Humper",
+      "guards": {
+        "startDate": {
+          "date": "2024-01-08 20:00:00 +0000"
+        },
+        "mintLimit": {
+          "id": 1,
+          "limit": 9
+        },
+        "solPayment": {
+          "value": 1.08,
+          "destination": "EcnBNipTwDBQAfmTBeajRctZZgFn4L8cz5RWEvJ1RVxb"
+        }
+      }
+    },
+    {
+      "label": "Public",
+      "guards": {
+        "startDate": {
+          "date": "2024-02-01 00:00:00 +0000"
+        },
+        "solPayment": {
+          "value": 2.7,
+          "destination": "EcnBNipTwDBQAfmTBeajRctZZgFn4L8cz5RWEvJ1RVxb"
+        }
+      }
+    }
+  ]
+}
 }
