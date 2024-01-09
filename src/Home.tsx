@@ -100,7 +100,7 @@ const Other = styled.div`
 const ImageWrap = styled.div`
   aspect-ratio: 1 / 1;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/2832432/pexels-photo-2832432.png);
+  background-image: url(https://alkebulanmeta.app/wp-content/uploads/2024/01/The-Humps-Collection-Base-of-Collection-Image.MASTER-2.gif);
   border-radius: 16px;
 `
 const Image = styled.div`
@@ -647,7 +647,7 @@ const Home = (props: HomeProps) => {
           <Container>
             <Column>
               <Content>
-                <CollectionName>Collection Name</CollectionName>
+                <CollectionName>The #1 Humps Collection</CollectionName>
                 <InfoRow>
                   {guardStates.isStarted && wallet.publicKey && (
                     <InfoBox>
@@ -655,12 +655,12 @@ const Home = (props: HomeProps) => {
                       <p>{candyMachineV3.items.available}{" "}</p>
                     </InfoBox>)}
                   <IconRow>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Globe></Globe></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Twitter></Twitter></a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
+                    <a href="https://alkebulanmeta.app/the-humps" target="_blank" rel="noopener noreferrer"><Globe></Globe></a>
+                    <a href="https://twitter.com/astehmari" target="_blank" rel="noopener noreferrer"><Twitter></Twitter></a>
+                    <a href="https://alkebulanmeta.app/discord" target="_blank" rel="noopener noreferrer"><Discord></Discord></a>
                   </IconRow>
                 </InfoRow>
-                <CollectionDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</CollectionDescription>
+                <CollectionDescription>In the ancient flow of Alkebulan Network-State, where vast metaverse zones stretched beneath endless cosmic orders, there lived a Bactrian camel named Bactra. Bactra was no ordinary camel; he bore two mighty humps upon his back, a symbol of his great energy reserves, firmness and symmetry. Bactra roamed the vastness as the herd leader, with metaphysical guidance from a wise Humpkeeper. As a seasoned collector of AlkebulanMeta Bactrian Camels, the Humpkeeper knew the true origin story of how the Bactrians arrived in the metaverse. As he gathered his collection the One would reason with the head Camels like Bactra, these special sci-future creatures knew the deepest secrets of the cosmos, and they would channel their gems of insight… from time to time.  If you are a Humpkeeper check the traits of your collection carefully, special trait combinations bring great powers to their keepers many times during every lunar cycle. Stay in touch with the AlkebulanMeta Discord Outpost, news often passes through there; https://alkebulanmeta.app/discord</CollectionDescription>
               </Content>
               <Other>
 
