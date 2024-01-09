@@ -25,6 +25,7 @@ export const Action = styled.button`
   background: var(--primary);
   border-radius: 4px;
   border: none;
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

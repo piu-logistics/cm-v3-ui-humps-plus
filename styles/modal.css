@@ -17,6 +17,7 @@
     border-bottom: none !important;
 }
 .MuiTypography-h6 {
+    font-family: 'Plus Jakarta Sans' !important;
     font-style: normal !important;
     font-weight: 700 !important;
     font-size: 32px !important;
@@ -50,6 +51,7 @@
     flex-wrap: wrap !important;
 }
 .MuiTypography-h5 {
+    font-family: 'Plus Jakarta Sans' !important;
     font-style: normal !important;
     font-weight: 600 !important;
     font-size: 24px !important;
@@ -61,6 +63,7 @@
 }
 .MuiTypography-body2 {
     font-size: 14px !important;
+    font-family: 'Plus Jakarta Sans' !important;
     font-style: normal !important;
     font-weight: 400 !important;
     line-height: 150% !important;
@@ -72,6 +75,7 @@
     flex-wrap: wrap !important;
     padding: 0px !important;
     gap: 12px !important;
+    font-family: 'Plus Jakarta Sans' !important;
     font-style: normal !important;
     font-weight: 500 !important;
     font-size: 12px !important;

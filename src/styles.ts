@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const Section = styled('div')<any>`
   width: calc(100% - 64px);
-  height: calc(100vh - 192px);
+  min-height: calc(100vh - 192px);
   padding: 96px 0;
+  display: flex;
+  align-items: center;
 
   @media only screen and (max-width: 768px) {
     height: auto;
@@ -12,7 +14,7 @@ export const Section = styled('div')<any>`
 
   @media only screen and (max-width: 450px) {
     width:auto;
-    padding: 32px 0;
+    padding: 128px 0 32px 0;
   }
 `
 export const Container = styled('div')<any>`
@@ -24,6 +26,7 @@ export const Container = styled('div')<any>`
   padding: 0 32px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 96px;
   
   @media only screen and (max-width: 1024px) {
@@ -53,6 +56,7 @@ export const Column = styled('div')<any>`
   }
 `;
 export const MintCount = styled('h3')`
+  font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
