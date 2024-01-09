@@ -19,19 +19,19 @@ import { writeFileSync } from "fs";
 
   const allowList = require("./allowlist.json");
   const demoNftCollection = new PublicKey(
-    "2cUj9sNUhJissuruAKfNuNPA8pSQfaKjg3GrcwfVn3cf"
+    "EygLzSdu2SeJ5GCGjgNXHSWkvxJDD95596VMkceGvmTR"
   );
   const demoTokenMint = new PublicKey(
-    "DYMs37sUJz65KmYa31Wzj2TKcTe5M5rhvdkKgcKWiEAs"
+    "CxxzqycCdVBcn1H2RBgQUcmb1g1QHdYnC3eKgieDN8wg"
   );
   const demoDestination = new PublicKey(
-    "53VVFtLzzi3nL2p1QF591PAB8rbcbsirYepwUphtHU9Q"
+    "EcnBNipTwDBQAfmTBeajRctZZgFn4L8cz5RWEvJ1RVxb"
   );
 
   const key = Keypair.fromSecretKey(Uint8Array.from(require("./key.json")));
   const { number, creators, ...config } = require("./config.json");
 
-  const metaplex = Metaplex.make(new Connection(clusterApiUrl("devnet"))).use(
+  const metaplex = Metaplex.make(new Connection(clusterApiUrl("mainnet"))).use(
     keypairIdentity(key)
   );
   config.creators = creators.forEach((c) => {
@@ -41,10 +41,10 @@ import { writeFileSync } from "fs";
     ? new PublicKey(cache.program?.collectionMint)
     : (
         await metaplex.nfts().create({
-          name: "Rejected f00kers",
-          uri: "https://arweave.net/MfllB5p9EeidnRRz3ToNUfnTwwmjbqZvOJOkL7GnEEY",
+          name: "The #1 Humps Collection",
+          uri: "https://nftstorage.link/ipfs/bafybeiar2h4lmc3qgqq7mozrvrstednfxaemgbkanuimvtuihoiqj7edxm/collection.json",
           creators: config.creators,
-          sellerFeeBasisPoints: 0,
+          sellerFeeBasisPoints: 360,
           isCollection: true,
           updateAuthority: key,
         })
@@ -92,14 +92,14 @@ import { writeFileSync } from "fs";
       },
       guards: {
         botTax: {
-          lamports: sol(0.1337),
+          lamports: sol(0.01),
           lastInstruction: true,
         },
         startDate: {
-          date: toDateTime("2022-10-20 18:00:00 +0000"),
+          date: toDateTime("2024-01-08 20:00:00 +0000"),
         },
         endTime: {
-          date: toDateTime("2022-10-20 18:00:00 +0000"),
+          date: toDateTime("2024-02-01 00:00:00 +0000"),
         },
       },
       groups: [
@@ -108,7 +108,7 @@ import { writeFileSync } from "fs";
           guards: {
             mintLimit: {
               id: 1,
-              limit: 1,
+              limit: 9,
             },
             redeemedAmount: {
               maximum: toBigNumber(50),
@@ -124,7 +124,7 @@ import { writeFileSync } from "fs";
           },
         },
         {
-          label: "waoed", // Whitelist (Allowlist)
+          label: "onlist", // Whitelist (Allowlist)
           guards: {
             allowList: {
               merkleRoot: getMerkleRoot(allowList),
@@ -157,10 +157,10 @@ import { writeFileSync } from "fs";
           },
         },
         {
-          label: "solPmt", // Premium (Sol Payment)
+          label: "Humper", // Premium (Sol Payment)
           guards: {
             solPayment: {
-              amount: sol(0.1),
+              amount: sol(1.08),
               destination: demoDestination,
             },
           },
